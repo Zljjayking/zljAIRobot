@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TwoButtonCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTB-Gb-Bim">
+                        <rect key="frame" x="18" y="9" width="60" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="p7w-XV-yAI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpJ-UG-HMZ">
+                        <rect key="frame" x="79" y="7" width="30" height="27.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Sej-fT-YeC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkO-G1-K9a">
+                        <rect key="frame" x="110" y="9" width="30" height="25.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="ekB-80-faL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDX-GT-apK">
+                        <rect key="frame" x="141" y="9" width="30" height="25.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="UZ2-R6-5sf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfO-Tr-7L4">
+                        <rect key="frame" x="172" y="9" width="30" height="25.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="c5H-zS-LQ0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mfO-Tr-7L4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="DDl-Zd-Mkx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gkO-G1-K9a" secondAttribute="bottom" constant="1" id="IYf-b5-9q7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="QTB-Gb-Bim" secondAttribute="bottom" constant="1" id="J16-RX-KFQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hDX-GT-apK" secondAttribute="bottom" constant="1" id="OUW-u0-p9p"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mfO-Tr-7L4" secondAttribute="bottom" constant="1" id="Q0K-w4-d6Q"/>
+                    <constraint firstItem="mfO-Tr-7L4" firstAttribute="leading" secondItem="hDX-GT-apK" secondAttribute="trailing" constant="1" id="R1I-wK-Zi1"/>
+                    <constraint firstItem="vpJ-UG-HMZ" firstAttribute="leading" secondItem="QTB-Gb-Bim" secondAttribute="trailing" constant="1" id="YsB-t0-Pyk"/>
+                    <constraint firstItem="gkO-G1-K9a" firstAttribute="leading" secondItem="vpJ-UG-HMZ" secondAttribute="trailing" constant="1" id="Yxq-2p-6XF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vpJ-UG-HMZ" secondAttribute="bottom" constant="1" id="c5d-B1-wzS"/>
+                    <constraint firstItem="hDX-GT-apK" firstAttribute="leading" secondItem="gkO-G1-K9a" secondAttribute="trailing" constant="1" id="fH7-L6-YuX"/>
+                    <constraint firstItem="hDX-GT-apK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="fmj-gX-tfs"/>
+                    <constraint firstItem="QTB-Gb-Bim" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="him-20-Oy7"/>
+                    <constraint firstItem="gkO-G1-K9a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="m5c-0Q-J59"/>
+                    <constraint firstAttribute="topMargin" secondItem="vpJ-UG-HMZ" secondAttribute="top" constant="1" id="ooL-iv-Y99"/>
+                    <constraint firstItem="QTB-Gb-Bim" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="xN8-5q-IQn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstButton" destination="vpJ-UG-HMZ" id="yrC-Hj-P02"/>
+                <outlet property="firstLabel" destination="gkO-G1-K9a" id="hjX-k3-awd"/>
+                <outlet property="nameLabel" destination="QTB-Gb-Bim" id="61Z-Nj-wzh"/>
+                <outlet property="secondButton" destination="hDX-GT-apK" id="LM4-mG-KO5"/>
+                <outlet property="secondLabel" destination="mfO-Tr-7L4" id="2Pe-6u-ywV"/>
+            </connections>
+            <point key="canvasLocation" x="301.5" y="225"/>
+        </tableViewCell>
+    </objects>
+</document>
